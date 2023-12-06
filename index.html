@@ -288,54 +288,64 @@ Alavi, H. (2016) ACOUSTICS OF HIGH PERFORMANCE TRANSMISSION-LINE LOUDSPEAKERS. 1
 </script>
         
 
-    <div id ="slide-container">
+<body style="background-color: #FFFFFF;">
+
+    <!-- ... (existing body content) ... -->
+
+    <h9> Conference presentation: How do transmission line speakers work </h9>
+
+    <div id="slide-container">
         <img id="slide" src="TL_measurement.jpg" alt="slide 1" style="width:100%; max-width: 1000px">
 
-        <div class="button"-container">
+        <div class="button-container">
             <button class="button" onclick="prevslide()">previous</button>
-             <button class="button" onclick="nextslide()">next</button>
+            <button class="button" onclick="nextslide()">next</button>
         </div>
 
         <div class="slide-number-container">
-            <button class ="button" onclick="showsidenumber(1)">1</button>
-            <button class ="button" onclick="showsidenumber(2)">2</button>
-            <button class ="button" onclick="showsidenumber(3)">3</button>
-            <button class ="button" onclick="showsidenumber(4)">4</button>
+            <button class="button" onclick="showslidenumber(1)">1</button>
+            <button class="button" onclick="showslidenumber(2)">2</button>
         </div>
 
-        <style>
-            #slide-container {
-                text-align: centre;
-                position: relative;
-            }
+    </div>
 
-            .button-container{
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translatex(-50%);
-                margin-bottom: -100px;
-            }
+    <script>
+        // ... (existing JavaScript code) ...
+    </script>
 
-            .button {
-                padding: 10px 20px;
-                background-colour: #2196F3;
-                color: white;
-                border: none;
-                border-radius: 5px;
-                font-size: 16px;
-                cursor: pointer;
-                margin: 0 5px;
-            }
+    <style>
+        #slide-container {
+            text-align: center;
+            position: relative;
+        }
 
-            .slide-number-container {
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translate(-50%);
-                margin-bottom: - 50px;
-            }
-            </style>
+        .button-container {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: -100px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .slide-number-container {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: -50px;
+        }
+    </style>
                 
         </style>
             
