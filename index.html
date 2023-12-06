@@ -272,6 +272,10 @@ Alavi, H. (2016) ACOUSTICS OF HIGH PERFORMANCE TRANSMISSION-LINE LOUDSPEAKERS. 1
         currentslide = (currentslide - 1 + slideimages.length) % slideimages.length;
         showslide();
     }
+       function nextslide() {
+        currentslide = (currentslide + 1) % slideimages.length;
+        showslide();
+    }
 
     // function to show a specific slide based on bottom number clicked
     function showslidenumber(slidenumber) {
