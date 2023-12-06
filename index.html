@@ -258,39 +258,86 @@ Alavi, H. (2016) ACOUSTICS OF HIGH PERFORMANCE TRANSMISSION-LINE LOUDSPEAKERS. 1
 
 
     <h9> Conference presentation: How do transmission line speakers work </h9>
-    <script>
-        //array of slide images
-        var slideimages = ["TL_measurement.jpg", "TL_measurement.jpg"];
-        var currentslide = 0;
-        function showslide(){
-            document.getelementbyid('slide').src = slideimages[currentslide];
-        }
+    
+   <script>
+    // array of slide images
+    var slideimages = ["TL_measurement.jpg", "TL_measurement.jpg"];
+    var currentslide = 0;
 
+    function showslide() {
+        document.getElementById('slide').src = slideimages[currentslide];
+    }
 
-        function prevslide(){
-            currentslide = (currentslide + 1) % slideimages.length;
-            showslide();
-        }
-
-        function prevslide(){
-            currentslide = (currentslide - 1 +slideimages.length) % slideimages.length;
-            showslide();
-        }
-
-        // function to show a specific slide based on bottom number clicked
-
-        function showslidenumber(slidenumber) {
-            current slide = slidenumber - 1;
-            showslide();
-        }
-
-        //call showslide to display first slide
-
+    function prevslide() {
+        currentslide = (currentslide - 1 + slideimages.length) % slideimages.length;
         showslide();
-        </script>
+    }
+
+    // function to show a specific slide based on bottom number clicked
+    function showslidenumber(slidenumber) {
+        currentslide = slidenumber - 1;
+        showslide();
+    }
+
+    // call showslide to display first slide
+    showslide();
+</script>
+        
 
     <div id ="slide-container">
         <img id="slide" src="TL_measurement.jpg" alt="TL_measurement.jpg" style="width:100%; max-width: 800px">
+
+        <div class="button"-container">
+            <button class="button" onclick="prevslide()">previous</button>
+             <button class="button" onclick="nextslide()">next</button>
+        </div>
+
+        <div class="slide-number-container">
+            <button class ="button" onclick="showsidenumber(1)">1</button>
+            <button class ="button" onclick="showsidenumber(2)">2</button>
+            <button class ="button" onclick="showsidenumber(3)">3</button>
+            <button class ="button" onclick="showsidenumber(4)">4</button>
+        </div>
+
+        <style>
+            #slide-container {
+                text-align: centre;
+                position: relative;
+            }
+
+            .button-container{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translatex(-50%);
+                margin-bottom: -100px;
+            }
+
+            .button {
+                padding: 10px 20px;
+                background-colour: #4caf50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                margin: 0 5px;
+            }
+
+            .slide-number-container {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%);
+                margin-bottom: - 50px;
+            }
+            </style>
+                
+        </style>
+            
+            
+            
+            
     
 
     
