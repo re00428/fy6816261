@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +10,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px; /* Add some margin to the body */
+            background-color: #FFFFFF;
         }
 
         /* Style for tables */
@@ -19,7 +21,8 @@
             margin-top: 10px; /* Add margin to the table */
         }
 
-        td, th {
+        td,
+        th {
             border: 1px solid #dddddd;
             text-align: left;
             padding: 8px;
@@ -29,7 +32,8 @@
             background-color: #dddddd;
         }
 
-        p.ex1, p.ex2 {
+        p.ex1,
+        p.ex2 {
             margin-left: 50px; /* Adjusted the margin for better fit */
         }
 
@@ -44,7 +48,8 @@
         }
 
         /* Style for table of contents background */
-        th, td {
+        th,
+        td {
             background-color: #5579C6;
             color: white; /* Adjusted text color for better contrast */
         }
@@ -54,12 +59,29 @@
             height: auto;
         }
 
-        h1, h2, h3, h4, h5, h6, h7 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        h7 {
             margin-bottom: 5px; /* Adjusted heading margins for better spacing */
         }
+
         /* Style for table of contents links */
+        table a {
+            color: blue; /* Set the color to blue */
+            text-decoration: none;
+        }
+
+        table a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body style="background-color: #FFFFFF;">
+
+<body>
 
     <img src="Capture.PNG" alt="Banner">
     <hr>
@@ -81,15 +103,15 @@
             <td><a href="#Introduction">Introduction</a></td>
         </tr>
         <tr>
-            <td><a href="#Extended Bass Response">ExtendedBassResponse</a></td>
+            <td><a href="#Extended Bass Response">Extended Bass Response</a></td>
         </tr>
         <tr>
-            <td><a href="#Materials Used">MaterialsUsed</a></td>
+            <td><a href="#Materials Used">Materials Used</a></td>
         </tr>
-         <tr>
+        <tr>
             <td><a href="#The Design Of the Transmission Line Speakers">The Design Of Transmission Line Speakers</a></td>
         </tr>
-         <tr>
+        <tr>
             <td><a href="#Materials Used">Materials Used</a></td>
         </tr>
         <tr>
@@ -99,16 +121,16 @@
             <td><a href="#Conclusion">Conclusion</a></td>
         </tr>
         <tr>
-            <td><a href="#Referneces">References</a></td>
+            <td><a href="#References">References</a></td>
         </tr>
     </table>
 
     <hr>
     <h3 id="Abstract">Abstract</h3>
-    
+
     <p class="ex1">
         <pre>
-            Most speakers used today in your house, cinemas, lecture theatres and nightclubs use simple designs where a speaker driver is mounted
+            Most speakers used today, in your house, cinemas, lecture theatres, and nightclubs use simple designs where a speaker driver is mounted
             in a sealed box or with basic ports at the back of the cabinet. What I will be discussing is a special type of speaker called Transmission
             lines. These recycle the sound energy from the rear-facing side of the speaker and direct it along a long (normally folded) pathway in
              the speaker enclosure thus changing the path difference of the sound waves (this is the difference in distance a wave travels to a point 
@@ -120,18 +142,19 @@
     <h3 id="Introduction">Introduction</h3>
     <p class="ex2">
         <pre>
-            Transmission line speakers are a design of speaker enclosures which aims to improve the bass response and sound quality of speaker systems.
+            Transmission line speakers are a design of speaker enclosures that aim to improve the bass response and sound quality of speaker systems.
             There are various benefits for the speaker enclosure each allowing for different characteristics from other speaker enclosures. 
             One characteristic of transmission line speakers is that they act as an acoustic waveguide, this means that the casing is capable
             of guiding and controlling passively the waves radiated out of the speaker, this is useful as manufacturers can more precisely control 
             and manage the sound produced by the speaker. This is especially used in the lower frequencies (Colloms Martin, Darlington Paul. 2005). 
         </pre>
     </p>
-        <!-- Image under Introduction -->
+    <!-- Image under Introduction -->
     <figure>
-    <img src="acoustic waveguide.png" alt="Introduction Image" style="max-width: 100%; height: auto; width: 1000px;">
-    <figcaption>Figure 1: the transmission of waves through a waveguide. Hejie Lin, Turgay Bengisu & Zissimos P. Mourelatos, 2022.
-    </figcaption>
+        <img src="acoustic waveguide.png" alt="Introduction Image" style="max-width: 100%; height: auto; width: 1000px;">
+        <figcaption>Figure 1: the transmission of waves through a waveguide. Hejie Lin, Turgay Bengisu & Zissimos P.
+            Mourelatos, 2022.
+        </figcaption>
     </figure>
     <p class="ex3">
         <pre>
@@ -141,15 +164,15 @@
             converted into sound.
         </pre>
     </p>
-<h4 id="Extended Bass Response">Extended Bass Response</h4>
-<p class="ex4">
-    <pre>
-        The idea of this design is that a normal bass driver/ speaker can produce frequencies which before would have been covered
-        by an external subwoofer. These frequencies can even go down to the infrasonic range (<17hz). This is done by delaying the
-        sound produced out the rear side of the driver and porting it out of the speaker enclosure when the wave is in phase 
-        with the front wave.
-    </pre>
-</p>
+    <h4 id="Extended Bass Response">Extended Bass Response</h4>
+    <p class="ex4">
+        <pre>
+            The idea of this design is that a normal bass driver/speaker can produce frequencies which before would have been covered
+            by an external subwoofer. These frequencies can even go down to the infrasonic range (<17hz). This is done by delaying the
+            sound produced out the rear side of the driver and porting it out of the speaker enclosure when the wave is in phase 
+            with the front wave.
+        </pre>
+    </p>
 
     <h5 id="Materials Used">Materials Used</h5>
 <p class="ex5">
